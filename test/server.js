@@ -79,6 +79,7 @@ Pingado.init(env).then(function(){
 		    let test = new Test({cookie:cookie, token:token})
 		    test.save(function(err, t){
 			if(err) res.json({message:err.message,code:err.code,stack:err.stack.split("\n")})
+			suite.logger.warn('Added '+t._id+' Test')
 			res.json(t)
 		    });
 		})
@@ -120,7 +121,6 @@ Pingado.init(env).then(function(){
 		    .expect(200)
 		    .expect('Content-Type', /json/)
 		    .expect(function(res){
-			console.log(res.text);
 			res.body.should.have.property('_id');
 			res.body.should.have.property('cookie');
 			res.body.should.have.property('token');
