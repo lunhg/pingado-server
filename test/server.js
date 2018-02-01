@@ -6,7 +6,6 @@ const fs = require('fs');
 let mongoose = require('mongoose');
 
 let env = path.join(__dirname, '.env')
-let envs = 'PORT DATABASE LOGGER VIEWS ENGINE PUBLIC IMAGES STYLES SCRIPTS COVERAGE DOCUMENTATION'
 
 Pingado.init(env).then(function(){
     describe('Testing pingado', function(){
@@ -20,8 +19,8 @@ Pingado.init(env).then(function(){
 	    });
 	})
 
-	it('should export .env environment', function(done){    
-	    foreach(envs.split(' '), function(e,i,o){
+	it('should export .env environment', function(done){
+	    foreach(Pingado.ENVS, function(e,i,o){
 		process.env.should.have.property('PINGADO_'+e)
 	    })
 	    done()
