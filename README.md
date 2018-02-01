@@ -1,4 +1,4 @@
-![coverage](/coverage/badge.svg)
+![coverage](/badge.svg)
 
 # Pingado-Server
 
