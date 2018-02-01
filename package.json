@@ -34,7 +34,7 @@
   },
   "scripts": {
     "test": "istanbul cover _mocha -- --opts mocha.opts",
-    "coverage": "lcov-badge -o ./coverage/badge.svg -l coverage ./coverage/lcov.info"
+    "coverage": "lcov-badge -o ./badge.svg -l coverage ./coverage/lcov.info"
   },
   "repository": {
     "type": "git",
