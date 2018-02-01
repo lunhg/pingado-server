@@ -1,0 +1,48 @@
+{
+  "name": "cafe-rails",
+  "version": "0.0.1",
+  "description": "\"simple express server to fast development\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "coffee-script": "^1.12.7",
+    "compression": "^1.7.1",
+    "connect-assets": "^5.4.0",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "foreach": "^2.0.5",
+    "jstransformer-marked": "^1.0.2",
+    "mongoose": "^5.0.0-rc2",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "winston": "^2.4.0",
+    "winston-mongodb": "^3.0.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "lcov-badge": "^1.0.4",
+    "mocha": "^4.0.1",
+    "mochawesome": "^3.0.2",
+    "should": "^13.2.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- --opts mocha.opts",
+    "coverage": "lcov-badge -o ./coverage/badge.svg -l coverage ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/lunhg/cafe-rails.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "lunhg",
+  "license": "ISC"
+}
