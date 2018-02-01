@@ -26,20 +26,21 @@ Crie um arquivo `.env` na pasta raiz do seu projeto como o a seguir.
 
     CAFE_RAILS_PORT=3000
     CAFE_RAILS_LOGGER=':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent'
-    CAFE_RAILS_VIEWS='/minha/pasta/app/views'
+    CAFE_RAILS_VIEWS='%ROOT/app/views'
     CAFE_RAILS_ENGINE='pug'
-    CAFE_RAILS_PUBLIC='/minha/pasta/app/assets'
-    CAFE_RAILS_IMAGE='/minha/pasta/app/assets/images'
-    CAFE_RAILS_FONTS='/minha/pasta/app/assets/fonts'
-    CAFE_RAILS_STYLES='/minha/pasta/app/assets/css'
-    CAFE_RAILS_SCRIPTS='/minha/pasta/app/assets/js'
-    CAFE_RAILS_COVERAGE='/minha/pasta/coverage/lcov-report'
-    CAFE_RAILS_DOCUMENTATION='/minha/pasta/app/assets/doc'
+    CAFE_RAILS_PUBLIC='%ROOT/app/assets'
+    CAFE_RAILS_IMAGE='%ROOT/app/assets/images'
+    CAFE_RAILS_FONTS='%ROOT/app/assets/fonts'
+    CAFE_RAILS_STYLES='%ROOT/app/assets/css'
+    CAFE_RAILS_SCRIPTS='%ROOT/app/assets/js'
+    CAFE_RAILS_COVERAGE='%ROOT/coverage/lcov-report'
+    CAFE_RAILS_DOCUMENTATION='%ROOT/app/assets/doc'
 	BLUEBIRD_LONG_STACK_TRACES=1 
 	BLUEBIRD_WARNINGS=1
 
 Variáveis:
 
+  - `%ROOT`: macro de substituição do diretório de execução atual (`process.cwd()`)
   - `CAFE_RAILS_PORT`: porta de execução do servidor
   - `CAFE_RAILS_LOGGER`: formato de registro dos acessos
   - `CAFE_RAILS_VIEWS`: pasta onde estão localizados os templates html 
