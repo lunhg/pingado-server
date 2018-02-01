@@ -1,5 +1,5 @@
 {
-  "name": "cafe-rails",
+  "name": "pingado-server",
   "version": "0.0.1",
   "description": "\"simple express server to fast development\"",
   "main": "index.js",
@@ -28,7 +28,6 @@
     "istanbul": "^0.4.5",
     "lcov-badge": "^1.0.4",
     "mocha": "^4.0.1",
-    "mochawesome": "^3.0.2",
     "should": "^13.2.0",
     "supertest": "^3.0.0"
   },
