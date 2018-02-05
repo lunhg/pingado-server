@@ -1,6 +1,6 @@
 {
   "name": "pingado-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "\"simple express server to fast development\"",
   "main": "index.js",
   "directories": {
@@ -17,6 +17,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "foreach": "^2.0.5",
+    "i18n": "^0.8.3",
     "jstransformer-marked": "^1.0.2",
     "mongoose": "^5.0.0-rc2",
     "morgan": "^1.9.0",
