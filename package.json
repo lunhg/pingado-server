@@ -1,6 +1,6 @@
 {
   "name": "pingado-server",
-  "version": "0.0.4",
+  "version": "0.0.41",
   "description": "\"simple express server to fast development\"",
   "main": "index.js",
   "directories": {
@@ -18,18 +18,18 @@
     "express": "^4.16.2",
     "foreach": "^2.0.5",
     "i18n": "^0.8.3",
-    "jstransformer-marked": "^1.0.2",
-    "mongoose": "^5.0.0-rc2",
+    "jstransformer-marked": "^1.0.3",
+    "mongoose": "^5.0.3",
     "morgan": "^1.9.0",
     "pug": "^2.0.0-rc.4",
     "winston": "^2.4.0",
-    "winston-mongodb": "^3.0.0"
+    "winston-mongodb": "^3.0.2"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
     "lcov-badge": "^1.0.4",
-    "mocha": "^4.0.1",
-    "should": "^13.2.0",
+    "mocha": "^4.1.0",
+    "should": "^13.2.1",
     "supertest": "^3.0.0"
   },
   "scripts": {
