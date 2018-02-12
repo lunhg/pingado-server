@@ -9,9 +9,8 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
-    "coffeescript": "^2.2.1",
     "compression": "^1.7.1",
-    "connect-assets": "^5.4.0",
+    "connect-assets": "git+https://github.com/lunhg/connect-assets.git",
     "cookie-parser": "^1.4.3",
     "csurf": "^1.9.0",
     "dotenv": "^4.0.0",
